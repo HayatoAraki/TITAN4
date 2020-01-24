@@ -23,7 +23,7 @@ TITAN4 Is Track Analyzer for Neutrons
 	表示される所要時間は目安です．環境や設定に大きく依存します．
 
 
-動作確認環境
+○動作確認環境
 	macOS Catalina 10.15.2
 	GNUPLOT 5.2.4
 	gcc 4.2.1
