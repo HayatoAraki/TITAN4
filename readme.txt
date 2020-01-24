@@ -9,13 +9,12 @@ TITAN4 Is Track Analyzer for Neutrons
 
 ○注意事項
 
-	GNUPLOTで描画するのでコマンドが通るようにしておいてください．
-
 	デフォルトではGNUPLOTがターミナル"aqua"を使うようになっています．
-	Windowsなどaquaがない環境では先に設定を変更してください．
+	Windowsなどaquaがない環境では先にsetting.hの設定を変更してください．
 
 	ファイルを出力しないターミナルを使う場合，空白のファイルが生成されます．
 
+	GNUPLOTで描画する際，環境によってエラーがたくさん出るかもしれません．
 	Cの演算が終わればシミュレーション自体は終了しており，描画に必要な
 	各種データファイルも出力されています．
 	GNUPLOTのエラーで進めない場合や図の見た目を変更したい場合は
@@ -26,9 +25,5 @@ TITAN4 Is Track Analyzer for Neutrons
 
 動作確認環境
 	macOS Catalina 10.15.2
-	MacBook Air (13-inch, 2017)
-	CPU: Intel Core i5
-	RAM: 8 GB
-
 	GNUPLOT 5.2.4
 	gcc 4.2.1

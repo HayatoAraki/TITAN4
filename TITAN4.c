@@ -26,7 +26,7 @@ int main(void){
 
   if(MY * MA > 11.){
     printf("\t出力ファイルが1GB以上になりそうだよ\n");
-  } else if(MY * MA > 60.){
+  } else if(MY * MA > 110.){
     if(safety){
       printf("The output file will be over 10 GB.\n");
       printf("This setting is prohibited.\n");
@@ -34,8 +34,8 @@ int main(void){
     }
   }
 
-  double time = 5. * (double)MY * (double)MA + 25. * (double)MY * (double)MA / (double)MP / (double)MP;
-  printf("\t%d秒ぐらいかかります\n", (int) floor(time));
+  int time = (int) floor(5.*MY*MA + 25.*MY*MA/(double)MP/(double)MP);
+  printf("\t%d秒ぐらいかかります\n", time);
 
   int count = 0;
   //double dx = 10.;
