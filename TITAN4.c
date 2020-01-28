@@ -218,11 +218,11 @@ int sim(struct region det, struct region mir1, struct region mir2, struct region
       if(particle->stat == 0){
 
 	// 適切な入射角だけ反射
-	double angle = particle->angle - mir1.angle;
+	double angle = - particle->angle + mir1.angle;
 	if(((double)rand()/Rmax < tan(angle*pi/180.)*siz_mir_x*reflectivity) && (angle <= mir_t_c)){
 	  //if((0.0 < tan(angle*pi/180.)/tan(pi/180.)) && (angle <= 1.)){
 	  particle->stat = 1;
-	  particle->angle -= 2.*angle;
+	  particle->angle += 2.*angle;
 	} else {
 	  particle->stat = 4;
 	}
@@ -238,10 +238,10 @@ int sim(struct region det, struct region mir1, struct region mir2, struct region
       if(particle->stat == 1){
 
 	// 適切な入射角だけ反射
-	double angle = particle->angle - mir2.angle;
+	double angle = - particle->angle + mir2.angle;
 	if(((double)rand()/Rmax < tan(angle*pi/180.)*siz_mir_x*reflectivity) && (angle <= mir_t_c)){
 	  particle->stat = 2;
-	  particle->angle -= 2.*angle;
+	  particle->angle += 2.*angle;
 	}
       }
 
@@ -249,10 +249,10 @@ int sim(struct region det, struct region mir1, struct region mir2, struct region
       if((particle->stat == 0) || (particle->stat == 4)){
 
 	// 適切な入射角だけ反射
-	double angle = particle->angle - mir2.angle;
+	double angle = - particle->angle + mir2.angle;
 	if(((double)rand()/Rmax < tan(angle*pi/180.)*siz_mir_x*reflectivity) && (angle <= mir_t_c)){
 	  particle->stat = 3;
-	  particle->angle -= 2.*angle;
+	  particle->angle += 2.*angle;
 	} else {
 	  particle->stat = 6;
 	}

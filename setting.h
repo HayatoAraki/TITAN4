@@ -27,15 +27,15 @@ const int MP = 1;
 const int safety = 1; // 1
 
 // xの最大値[mm] (detのx座標)
-const double x_max = 5000.; // 5000.
+const double x_max = 5500.; // 5000.
 
 // yの最小値[mm]
 // -100から-50までの範囲
-const double y_min = -50.; // -50.
+const double y_min = -100.; // -50.
 
 // yの最大値[mm]
 // 50以上
-const double y_max = 250.; // 250.
+const double y_max = 200.; // 250.
 
 
 
@@ -91,21 +91,21 @@ const double reflectivity = 0.8; // 0.8
 const double mir1_x = 2700.; // 2700.
 
 // mir1の中心y座標[mm]
-const double mir1_y = 74.; // 74.
+const double mir1_y = -30.; // 74.
 
 // mir1の角度[degree]
 // x軸に対する反射面の角度(反時計回り)
 const double mir1_t = 1.; // 1.
 
 // mir2の中心x座標[mm]
-const double mir2_x = 3900.; // 3900.
+const double mir2_x = 4100.; // 3900.
 
 // mir2の中心y座標[mm]
-const double mir2_y = 74.; //74.
+const double mir2_y = 20.; //74.
 
 // mir2の角度[degree]
 // x軸に対する反射面の角度
-const double mir2_t = -1.; // -1.
+const double mir2_t = 3.; // -1.
 
 
 
@@ -122,28 +122,28 @@ const double siz_sld_x = 100.; // 100.
 const double sld1_l = 2000.; // 2000.
 
 // sld1の上端y座標[mm]
-const double sld1_t = 30.; // 30.
+const double sld1_t = -50.; // 30.
 
 // sld2は上固定
 // sld2の左端x座標[mm]
 const double sld2_l = 2000.; // 2000.
 
 // sld2の下端y座標[mm]
-const double sld2_b = 70.; // 70.
+const double sld2_b = -10.; // 70.
 
 // sld3は下固定
 // sld3の左端x座標[mm]
 const double sld3_l = 2500.; // 2500.
 
 // sld3の上端y座標[mm]
-const double sld3_t = 52.; // 52.
+const double sld3_t = -50.; // 52.
 
 // sld4は上固定
 // sld4の左端x座標[mm]
 const double sld4_l = 2500.; // 2500.
 
 // sld4の下端y座標[mm]
-const double sld4_b = 87.; // 87.
+const double sld4_b = -10.; // 87.
 
 
 
